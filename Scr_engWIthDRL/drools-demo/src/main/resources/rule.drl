@@ -1,0 +1,104 @@
+package com.sample  
+import com.clovity.examples.drools.domain.Candidate 
+import com.clovity.examples.drools.domain.Option
+
+
+rule "Q1"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ1=="1")
+   then  
+     $op1.setPointQ1($as);
+     update($op1); 
+end;
+
+
+rule "Q2"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ2=="3")
+   then  
+     $op1.setPointQ2($as);
+     update($op1); 
+end;
+
+
+rule "Q3"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ3=="1")
+   then  
+     $op1.setPointQ3($as);
+     update($op1); 
+end;
+
+
+rule "Q4"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ4=="1")
+   then  
+     $op1.setPointQ4($as);
+     update($op1); 
+end;
+
+
+rule "Q5"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ5=="4")
+   then  
+     $op1.setPointQ5($as);
+     update($op1); 
+end;
+
+
+rule "Q6"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ6=="3")
+   then 
+     $op1.setPointQ6($as);
+     update($op1); 
+end;
+
+
+rule "Q7"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ7=="3")
+   then  
+     $op1.setPointQ7($as);
+     update($op1); 
+end;
+
+
+rule "Q8"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ8=="1")
+   then  
+     $op1.setPointQ8($as);
+     update($op1); 
+end;
+
+
+rule "Q9"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ9=="1")
+   then  
+     $op1.setPointQ9($as);
+     update($op1); 
+end;
+
+
+rule "Q10"  
+   when  
+     Option($as : AssignedScore)
+     $op1 : Candidate(ChoiceQ10=="4")
+   then  
+     $op1.setPointQ10($as);
+     update($op1); 
+end;
+
